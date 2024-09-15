@@ -1,24 +1,41 @@
-Computer Vision Project based on dataset from Kaggle: https://www.kaggle.com/datasets/kacpergregorowicz/house-plant-species
+# Plant Species Classification using Computer Vision
 
-About Dataset
+This project focuses on classifying house plant species based on a dataset sourced from Kaggle: [House Plant Species Dataset](https://www.kaggle.com/datasets/kacpergregorowicz/house-plant-species).
 
-This plant image dataset consists of 14,790 images categorized into 47 distinct plant species classes. The dataset was compiled by collecting images from Bing Images and manually curating them, although not by professional biologist. I collected this images for a project aimed at classifying plant species as either toxic or safe for cats.
+## Project Overview
 
-Key Features:
+This project aims to create a machine learning model capable of classifying plant species based on the provided image data. The primary tools and technologies used include:
 
-Total Images: 14,790
-Number of Classes: 47
-Image Source: Collected from Bing Images
-Curation Method: Manual cleaning by non-expert
-Dataset Composition:
+- **PyTorch** for building and training the deep learning models.
+- **Docker** to containerize the application and streamline the development and deployment process.
 
-The number of images per class varies significantly, ranging from 66 (Yucca) to 547 (Monstera Deliciosa).
-Some well-represented classes include Chinese evergreen (514 images), Dumb Cane (541 images), and Monstera Deliciosa (547 images).
-Classes with fewer images include Yucca (66 images), Kalanchoe (130 images), and Asparagus Fern (169 images).
-Image Characteristics:
+## About the Dataset
 
-Images vary in quality and resolution.
-The dataset includes both whole plant images and close-ups of specific plant parts.
-Plants are placed indoor and outdoors
-Images are organized into separate folders for each plant category.
-The current dataset is for personal use only due to copyright considerations.
+The dataset contains **14,790 images** categorized into **47 distinct plant species**. These images were collected from Bing Images and manually curated by non-experts. The primary motivation for compiling this dataset was to classify plant species as either toxic or safe for cats.
+
+### Key Features:
+- **Total Images**: 14,790
+- **Number of Classes**: 47
+- **Image Source**: Bing Images
+- **Curation Method**: Manual cleaning by non-expert
+
+### Dataset Composition:
+The dataset has a varied number of images per class, with some well-represented classes and others having fewer images:
+- **Well-represented Classes**: 
+  - Monstera Deliciosa: 547 images
+  - Dumb Cane: 541 images
+  - Chinese Evergreen: 514 images
+- **Under-represented Classes**:
+  - Yucca: 66 images
+  - Kalanchoe: 130 images
+  - Asparagus Fern: 169 images
+
+### Image Characteristics:
+- Images vary in quality and resolution.
+- Includes both whole plant images and close-ups of specific plant parts.
+- Plants are shown both indoors and outdoors.
+- Images are organized into separate folders based on plant category.
+
+**Note**: Due to copyright considerations, the dataset is for personal use only.
+
+

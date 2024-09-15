@@ -1,41 +1,32 @@
-# Plant Species Classification using Computer Vision
+# Dog and Cat Image Classification
 
-This project focuses on classifying house plant species based on a dataset sourced from Kaggle: [House Plant Species Dataset](https://www.kaggle.com/datasets/kacpergregorowicz/house-plant-species).
+### Tools and Technologies
 
-## Project Overview
+- **PyTorch**: For building and training deep learning models.
+- **Docker**: To containerize the application and manage dependencies.
 
-This project aims to create a machine learning model capable of classifying plant species based on the provided image data. The primary tools and technologies used include:
+## Overview
 
-- **PyTorch** for building and training the deep learning models.
-- **Docker** to containerize the application and streamline the development and deployment process.
+This dataset is designed for image classification tasks, featuring a balanced collection of images of dogs and cats. It includes a total of **1,000 images** with an equal distribution of **500 images of dogs** and **500 images of cats**. The images are standardized to a resolution of **512x512 pixels**.
 
-## About the Dataset
+## Dataset Details
 
-The dataset contains **14,790 images** categorized into **47 distinct plant species**. These images were collected from Bing Images and manually curated by non-experts. The primary motivation for compiling this dataset was to classify plant species as either toxic or safe for cats.
+- **Total Images**: 1,000
+- **Dog Images**: 500
+- **Cat Images**: 500
+- **Image Resolution**: 512x512 pixels
+- **File Format**: .png
+- **Source**: Images generated using Stable Diffusion 1.5
 
-### Key Features:
-- **Total Images**: 14,790
-- **Number of Classes**: 47
-- **Image Source**: Bing Images
-- **Curation Method**: Manual cleaning by non-expert
+## Usage
 
-### Dataset Composition:
-The dataset has a varied number of images per class, with some well-represented classes and others having fewer images:
-- **Well-represented Classes**: 
-  - Monstera Deliciosa: 547 images
-  - Dumb Cane: 541 images
-  - Chinese Evergreen: 514 images
-- **Under-represented Classes**:
-  - Yucca: 66 images
-  - Kalanchoe: 130 images
-  - Asparagus Fern: 169 images
+This dataset is ideal for various tasks, including:
 
-### Image Characteristics:
-- Images vary in quality and resolution.
-- Includes both whole plant images and close-ups of specific plant parts.
-- Plants are shown both indoors and outdoors.
-- Images are organized into separate folders based on plant category.
+- **Binary Classification**: Distinguishing between two categories (dogs vs. cats).
+- **Image Recognition and Processing**: Enhancing skills in image analysis and manipulation.
+- **Machine Learning and Deep Learning Model Training**: Building and training models for image-based tasks.
 
-**Note**: Due to copyright considerations, the dataset is for personal use only.
+## Project Implementation
 
+To streamline the development and deployment process, Docker is used. Docker allows for containerization of the application, ensuring a consistent environment across different systems.
 

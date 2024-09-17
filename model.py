@@ -24,8 +24,8 @@ OUTPUT_SIZE = 2048
 
 #model = models.resnext50_32x4d(weights = models.ResNeXt50_32X4D_Weights.IMAGENET1K_V2)
 
-cats = Path("C:/Users/mariu/Documents/House-Plant-Species-Computer-Vision-Prediction/data/cat")
-dogs = Path("C:/Users/mariu/Documents/House-Plant-Species-Computer-Vision-Prediction/data/dog")
+cats = Path("/app/data/cat")
+dogs = Path("/app/data/dog")
 
 # Get lists of PNG images
 cat_images = list(cats.glob("*.png"))
@@ -54,7 +54,7 @@ def _load(image_path, as_tensor=True):
     else:                  # Return the PIL Image object without conversion.
         return image  
 
-def view_multiple_samples(df, sample_loader, count=10, color_map='rgb', fig_size=(14, 10)):
+def view_multiple_samples(df, sample_loader, count=10, color_map='rgb', fig_size=(14, 10), output_path='output.png'):
     rows = count // 5
     if count % 5 > 0:
         rows += 1
@@ -73,8 +73,8 @@ def view_multiple_samples(df, sample_loader, count=10, color_map='rgb', fig_size
         
         plt.axis('off')  # Optionally turn off axes for a cleaner look
 
-    plt.show()  # Ensure the plot is displayed
-
+    plt.savefig(output_path)  # Save the plot to an image file
+    print(f"Plot saved to {output_path}")
 
 # Call view_mulitiple_samples function to display 20 random sample images.
 view_multiple_samples(

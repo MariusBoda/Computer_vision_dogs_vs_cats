@@ -11,11 +11,11 @@ WORKDIR /app
 COPY . /app
 
 # Install any necessary Python packages
-# If you have additional dependencies, you can add them to a requirements.txt file
+# Ensure dependencies like pandas, matplotlib, and pillow are installed
 RUN pip install --upgrade pip && \
-    pip install torch torchvision
+    pip install torch torchvision pandas matplotlib pillow arrow
 
-# Specify the device as GPU
+# Specify the device as CPU (change if GPU is used)
 ENV DEVICE=cpu
 
 # Run the Python script when the container launches
